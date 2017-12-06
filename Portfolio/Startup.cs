@@ -35,6 +35,10 @@ namespace Portfolio
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                app.UseForwardedHeaders(new ForwardedHeadersOptions
+                {
+                    ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedFor | Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.XForwardedProto
+                });
             }
 
             app.UseStaticFiles();

@@ -1,0 +1,64 @@
+﻿<div class="navbar-fixed" id="master-navigation">
+    <nav id="navigation-bar" class="expanded">
+        <div id="navigation-wrapper" class="nav-wrapper container">
+            <a class="brand-logo" href="/">Everett Southwick</a>
+            <a class="button-collapse" href="#!" data-activates="mobile-navigation">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="navigation-list" class="right hide-on-med-and-down">
+                <li>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("About", "About", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Portfolio", "Portfolio", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Resume", "Resume", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "Contact", "Home")
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<ul id="mobile-navigation" class="side-nav">
+    <li>
+        @Html.ActionLink("Home", "Index", "Home")
+    </li>
+    <li>
+        @Html.ActionLink("About", "About", "Home")
+    </li>
+    <li>
+        @Html.ActionLink("Portfolio", "Portfolio", "Home")
+    </li>
+    <li>
+        @Html.ActionLink("Resume", "Resume", "Home")
+    </li>
+    <li>
+        @Html.ActionLink("Contact", "Contact", "Home")
+    </li>
+</ul>
+<div id="master-banner">
+    <div id="banner" style="background: url('/images/backgrounds/@ViewData["Background"]') no-repeat center center">
+        <div class="valign-wrapper">
+            <div id="tagline" class="container">
+                <div id="heading" class="center">
+                    <h1 class="valign">@ViewData["Heading"]</h1>
+                </div>
+                <div id="sub-heading" class="center">
+                    <h2 class="valign">@ViewData["Subheading"]</h2>
+                </div>
+                @if (ViewData["Title"].ToString() == "Resume")
+                {
+                <div id="download-resume" class="center">
+                    <a class="btn inverse" href="~/files/everett-southwick-resume-1493411183.pdf"><i class="material-icons">cloud_download</i> Download Resume</a>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

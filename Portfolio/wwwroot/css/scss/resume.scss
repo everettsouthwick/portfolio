@@ -1,0 +1,118 @@
+﻿section.section {
+  div {
+    h4.heading {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 25px;
+      padding: 0;
+    }
+  }
+
+  div.resume-technologies {
+    div {
+      ul {
+        margin-left: 20px;
+
+        li {
+          font-size: 14px;
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+
+  div.resume-experience {
+    div.resume-jobs {
+      div.resume-job {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        p {
+          line-height: 150%;
+          padding: 0;
+          margin-bottom: 0;
+          margin: 0;
+          font-size: 14px;
+        }
+
+        p.title {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        p.company-and-experience {
+          font-style: italic;
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+
+        p.languages {
+          font-style: italic;
+          margin-top: 10px;
+          padding: 1.5em;
+          margin-bottom: 50px;
+
+          &.last {
+            margin-bottom: 0;
+          }
+
+          span.bold {
+            font-style: normal;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  div.resume-education {
+    div.resume-schools {
+      div.resume-school {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        p {
+          line-height: 150%;
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+        }
+
+        p.title {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        p.school-and-dates {
+          font-style: italic;
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+
+        p.languages {
+          font-style: italic;
+          margin-top: 10px;
+          padding: 1.5em;
+          margin-bottom: 50px;
+
+          &.last {
+            margin-bottom: 0;
+          }
+
+          span.bold {
+            font-style: normal;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

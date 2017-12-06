@@ -1,0 +1,39 @@
+﻿html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+span.encoded-phone {
+  display: none;
+  opacity: 0;
+}
+
+span.encoded-email {
+  display: none;
+  opacity: 0;
+}
+
+a.encoded-email {
+  display: none;
+  opacity: 0;
+}
+
+i.material-icons {
+  vertical-align: middle;
+}
+
+i.fa {
+  vertical-align: middle;
+}
+
+main {
+  a {
+    color: $primary-link;
+    border-bottom: 1px solid $primary-link-border;
+    transition: .5s color;
+
+    &:hover {
+      color: $primary-link-hover;
+      transition: .5s color;
+    }
+  }
+}
